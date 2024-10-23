@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brute Force Password Guessing Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Brute Force Password Guessing Simulation</h1>
+
+        <label for="passwordInput">Enter a password:</label>
+        <input type="password" id="passwordInput" placeholder="Enter password" />
+
+        <div class="controls">
+            <label for="speedSlider">Speed (Guesses per second):</label>
+            <input type="range" id="speedSlider" min="1" max="10000" value="1000" />
+
+            <p>Character Set:</p>
+            <label><input type="checkbox" id="lowercase" checked /> Lowercase (a-z)</label>
+            <label><input type="checkbox" id="uppercase" checked /> Uppercase (A-Z)</label>
+            <label><input type="checkbox" id="numbers" checked /> Numbers (0-9)</label>
+            <label><input type="checkbox" id="special" checked /> Special Characters (!@#$%^&*)</label>
+        </div>
+
+        <button id="startSimulation">Start Simulation</button>
+        <button id="stopSimulation">Stop Simulation</button> <!-- Added Stop Button -->
+        <div id="results"></div>
+    </div>
+
+    <footer>
+        <p>Developed by ARK</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
